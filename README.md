@@ -10,6 +10,7 @@ Swinflate aims to encorporate a set of collection view layouts which provide a b
 
 #### SWInflateLayout
 
+<p align="center"><img src="https://github.com/VladIacobIonut/Swinflate/blob/master/ReadmeResources/swinflate.gif" /></p>
 
 Installation
 ------------
