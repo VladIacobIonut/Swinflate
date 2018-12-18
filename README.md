@@ -6,6 +6,8 @@
 ![Platform](https://img.shields.io/cocoapods/p/SwipeCellKit.svg)
 
 
+<p align="center"><img src="https://github.com/VladIacobIonut/Swinflate/blob/master/ReadmeResources/logo.png"/></p>
+
 Swinflate aims to encorporate a set of collection view layouts which provide a better and even more fluid experience in collection vieews . It is amongst the goals of this project to make it ruthlessly simple for you to use it in your application.   
 
 ## Available layouts
