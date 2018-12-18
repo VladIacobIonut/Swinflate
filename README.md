@@ -12,6 +12,13 @@ Swinflate aims to encorporate a set of collection view layouts which provide a b
 
 <p align="center"><img src="https://github.com/VladIacobIonut/Swinflate/blob/master/ReadmeResources/swinflate.gif" height="400" width="300"/></p>
 
+
+## Requirements
+
+* Swift 4.2
+* Xcode 10+
+* iOS 11.0+
+
 Installation
 ------------
 
