@@ -5,3 +5,12 @@
 
 
 Swinflate aims to encorporate a set of collection view layouts which provide a better and even more fluid experience in collection vieews . It is amongst the goals of this project to make it ruthlessly simple for you to use it in your application.   
+
+Installation
+------------
+
+Carthage
+
+```
+github "https://github.com/VladIacobIonut/Swinflate" ~> 0.0.1
+```
