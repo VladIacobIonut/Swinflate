@@ -1,0 +1,11 @@
+framework module Swinflate {
+  umbrella header "Swinflate.h"
+
+  export *
+  module * { export * }
+}
+
+module Swinflate.Swift {
+    header "Swinflate-Swift.h"
+    requires objc
+}
