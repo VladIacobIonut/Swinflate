@@ -40,19 +40,19 @@ Usage
 
 This layout is designed to work with horizontal collection view of a single row and multiple columns.  
 
-1. Before using it, please import in the class where your collectionView lies
+1. Before using it, please import in the class where your collectionView lies.
 
 ```swift
   import Swinflate
 ```  
 
-2. To implement it, just pass an instance of the SWInflateLayout class to the constructor of the collectionView
+2. To implement it, just pass an instance of the SWInflateLayout class to the constructor of the collectionView.
 
 ```swift
   collectionView = UICollectionView(frame: .zero, collectionViewLayout: SWInflateLayout())
 ```  
 
-3. You should also return the item size for your cells in the ```sizeForItem```   method of the ```UICollectionViewDelegateFlowLayout```  
+3. You should also return the item size for your cells in the ```sizeForItem```   method of the ```UICollectionViewDelegateFlowLayout```  .
 
 ```swift
 extension CustomLayoutViewController: UICollectionViewDelegateFlowLayout {
