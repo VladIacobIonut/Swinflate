@@ -52,7 +52,7 @@ This layout is designed to work with horizontal collection view of a single row 
   collectionView = UICollectionView(frame: .zero, collectionViewLayout: SWInflateLayout())
 ```  
 
-3. You should also return the item size for your cells in the ```swift sizeForItem```   method of the ```swift UICollectionViewDelegateFlowLayout  ```  
+3. You should also return the item size for your cells in the ```sizeForItem```   method of the ```UICollectionViewDelegateFlowLayout```  
 
 ```swift
 extension CustomLayoutViewController: UICollectionViewDelegateFlowLayout {
