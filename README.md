@@ -66,10 +66,10 @@ collectionView = UICollectionView(frame: .zero, collectionViewLayout: stackLayou
 ```  
 
 Note 
--  This layout allow you to enable or disable the stack effect by setting the ` `  ` hasStackEffect `` ` property   ( this property is   ` `  ` false `` ` by default)
--  Both layouts allow you to enable or disable the paging effect by setting the ` `  ` isPagingEnabled `` ` property ( this property is   ` `  ` true `` ` by default)
+-  This layout allow you to enable or disable the stack effect by setting the  `hasStackEffect`  property   ( this property is   `false`  by default).
+-  Both layouts allow you to enable or disable the paging effect by setting the `isPagingEnabled`  property ( this property is   `true`  by default).
  
-3. You should also return the item size for your cells in the ```sizeForItem```   method of the ```UICollectionViewDelegateFlowLayout```  .
+3. You should also return the item size for your cells in the  `sizeForItem`   method of the  `UICollectionViewDelegateFlowLayout` .
 
 ```swift
 extension CustomLayoutViewController: UICollectionViewDelegateFlowLayout {
