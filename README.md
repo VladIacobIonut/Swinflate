@@ -41,9 +41,7 @@ github "https://github.com/VladIacobIonut/Swinflate" ~> 0.0.1
 Usage
 ------------
 
-#### SWInflateLayout
-
-This layout is designed to work with horizontal collection view of a single row and multiple columns.  
+This layouts are designed to work with horizontal collection view of a single row and multiple columns.  
 
 1. Before using it, please import in the class where your collectionView lies.
 
@@ -51,12 +49,26 @@ This layout is designed to work with horizontal collection view of a single row 
   import Swinflate
 ```  
 
-2. To implement it, just pass an instance of the SWInflateLayout class to the constructor of the collectionView.
+2. To implement it, just pass an instance of one of the layout classes enumerated above to the constructor of the collectionView.
+
+######  SWInflateLayout
 
 ```swift
   collectionView = UICollectionView(frame: .zero, collectionViewLayout: SWInflateLayout())
 ```  
 
+######  SWHorizontalStackLayout
+
+```swift
+let stackLayout = SWHorizontalStackLayout()
+stackLayout.hasStackEffect = true
+collectionView = UICollectionView(frame: .zero, collectionViewLayout: stackLayout)
+```  
+
+Note 
+-  This layout allow you to enable or disable the stack effect by setting the ` `  ` hasStackEffect `` ` property   ( this property is   ` `  ` false `` ` by default)
+-  Both layouts allow you to enable or disable the paging effect by setting the ` `  ` isPagingEnabled `` ` property ( this property is   ` `  ` true `` ` by default)
+ 
 3. You should also return the item size for your cells in the ```sizeForItem```   method of the ```UICollectionViewDelegateFlowLayout```  .
 
 ```swift
@@ -66,3 +78,6 @@ extension CustomLayoutViewController: UICollectionViewDelegateFlowLayout {
         }
     }
 ```  
+
+
+
