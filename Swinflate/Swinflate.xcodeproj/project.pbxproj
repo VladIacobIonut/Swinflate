@@ -8,10 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		F52C5E5921C9322200E19FF8 /* SWInflateLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AF55EC21C7A8BB0098CCD7 /* SWInflateLayout.swift */; };
+		F53A93C821CB7A34005ECF25 /* SwinflateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F53A93C721CB7A34005ECF25 /* SwinflateTests.m */; };
+		F53A93CA21CB7A34005ECF25 /* Swinflate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5AF55E121C7A8240098CCD7 /* Swinflate.framework */; };
+		F53A93D121CB7A61005ECF25 /* SWInflateLayoutUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53A93D021CB7A61005ECF25 /* SWInflateLayoutUnitTest.swift */; };
 		F5AF55E621C7A8240098CCD7 /* Swinflate.h in Headers */ = {isa = PBXBuildFile; fileRef = F5AF55E421C7A8240098CCD7 /* Swinflate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		F53A93CB21CB7A34005ECF25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5AF55D821C7A8240098CCD7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5AF55E021C7A8240098CCD7;
+			remoteInfo = Swinflate;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		F53A93C521CB7A34005ECF25 /* SwinflateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwinflateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F53A93C721CB7A34005ECF25 /* SwinflateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwinflateTests.m; sourceTree = "<group>"; };
+		F53A93C921CB7A34005ECF25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F53A93D021CB7A61005ECF25 /* SWInflateLayoutUnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWInflateLayoutUnitTest.swift; sourceTree = "<group>"; };
 		F5AF55E121C7A8240098CCD7 /* Swinflate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Swinflate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5AF55E421C7A8240098CCD7 /* Swinflate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Swinflate.h; sourceTree = "<group>"; };
 		F5AF55E521C7A8240098CCD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -19,6 +36,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F53A93C221CB7A34005ECF25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F53A93CA21CB7A34005ECF25 /* Swinflate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F5AF55DE21C7A8240098CCD7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -29,10 +54,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F53A93BD21CB79AA005ECF25 /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				F5AF55EC21C7A8BB0098CCD7 /* SWInflateLayout.swift */,
+			);
+			path = Layouts;
+			sourceTree = "<group>";
+		};
+		F53A93C621CB7A34005ECF25 /* SwinflateTests */ = {
+			isa = PBXGroup;
+			children = (
+				F53A93C721CB7A34005ECF25 /* SwinflateTests.m */,
+				F53A93C921CB7A34005ECF25 /* Info.plist */,
+				F53A93D021CB7A61005ECF25 /* SWInflateLayoutUnitTest.swift */,
+			);
+			path = SwinflateTests;
+			sourceTree = "<group>";
+		};
 		F5AF55D721C7A8240098CCD7 = {
 			isa = PBXGroup;
 			children = (
 				F5AF55E321C7A8240098CCD7 /* Swinflate */,
+				F53A93C621CB7A34005ECF25 /* SwinflateTests */,
 				F5AF55E221C7A8240098CCD7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				F5AF55E121C7A8240098CCD7 /* Swinflate.framework */,
+				F53A93C521CB7A34005ECF25 /* SwinflateTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,9 +93,9 @@
 		F5AF55E321C7A8240098CCD7 /* Swinflate */ = {
 			isa = PBXGroup;
 			children = (
+				F53A93BD21CB79AA005ECF25 /* Layouts */,
 				F5AF55E421C7A8240098CCD7 /* Swinflate.h */,
 				F5AF55E521C7A8240098CCD7 /* Info.plist */,
-				F5AF55EC21C7A8BB0098CCD7 /* SWInflateLayout.swift */,
 			);
 			path = Swinflate;
 			sourceTree = "<group>";
@@ -69,6 +114,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		F53A93C421CB7A34005ECF25 /* SwinflateTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F53A93CD21CB7A34005ECF25 /* Build configuration list for PBXNativeTarget "SwinflateTests" */;
+			buildPhases = (
+				F53A93C121CB7A34005ECF25 /* Sources */,
+				F53A93C221CB7A34005ECF25 /* Frameworks */,
+				F53A93C321CB7A34005ECF25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F53A93CC21CB7A34005ECF25 /* PBXTargetDependency */,
+			);
+			name = SwinflateTests;
+			productName = SwinflateTests;
+			productReference = F53A93C521CB7A34005ECF25 /* SwinflateTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		F5AF55E021C7A8240098CCD7 /* Swinflate */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F5AF55E921C7A8240098CCD7 /* Build configuration list for PBXNativeTarget "Swinflate" */;
@@ -96,6 +159,10 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Vlad Iacob";
 				TargetAttributes = {
+					F53A93C421CB7A34005ECF25 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
 					F5AF55E021C7A8240098CCD7 = {
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1010;
@@ -115,11 +182,19 @@
 			projectRoot = "";
 			targets = (
 				F5AF55E021C7A8240098CCD7 /* Swinflate */,
+				F53A93C421CB7A34005ECF25 /* SwinflateTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F53A93C321CB7A34005ECF25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F5AF55DF21C7A8240098CCD7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -130,6 +205,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F53A93C121CB7A34005ECF25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F53A93C821CB7A34005ECF25 /* SwinflateTests.m in Sources */,
+				F53A93D121CB7A61005ECF25 /* SWInflateLayoutUnitTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F5AF55DD21C7A8240098CCD7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -140,7 +224,56 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		F53A93CC21CB7A34005ECF25 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5AF55E021C7A8240098CCD7 /* Swinflate */;
+			targetProxy = F53A93CB21CB7A34005ECF25 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		F53A93CE21CB7A34005ECF25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9298QC9R96;
+				INFOPLIST_FILE = SwinflateTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.p3ds.dobot.SwinflateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F53A93CF21CB7A34005ECF25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9298QC9R96;
+				INFOPLIST_FILE = SwinflateTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.p3ds.dobot.SwinflateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		F5AF55E721C7A8240098CCD7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -321,6 +454,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F53A93CD21CB7A34005ECF25 /* Build configuration list for PBXNativeTarget "SwinflateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F53A93CE21CB7A34005ECF25 /* Debug */,
+				F53A93CF21CB7A34005ECF25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F5AF55DB21C7A8240098CCD7 /* Build configuration list for PBXProject "Swinflate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
