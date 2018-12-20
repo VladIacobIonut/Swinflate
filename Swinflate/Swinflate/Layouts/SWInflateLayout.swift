@@ -11,8 +11,8 @@ import UIKit
 public final class SWInflateLayout: UICollectionViewFlowLayout {
     // MARK: - Properties
     
+    var isPagingEnabled = true
     private var firstSetupDone = false
-    private var isPagingEnabled = true
     private var cellWidth: CGFloat = 0
     private var contentSpacing: CGFloat = 0
     
