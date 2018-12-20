@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class SWHorizontalStackLayout: UICollectionViewFlowLayout {
+public final class SWHorizontalStackLayout: UICollectionViewFlowLayout {
     // MARK: - Properties
     
     var hasStackEffect: Bool = false
@@ -19,7 +19,7 @@ final class SWHorizontalStackLayout: UICollectionViewFlowLayout {
     
     // MARK: - Override
     
-    override func prepare() {
+    public override func prepare() {
         super.prepare()
         
         guard firstSetupDone else {
@@ -29,11 +29,11 @@ final class SWHorizontalStackLayout: UICollectionViewFlowLayout {
         }
     }
     
-    override func shouldInvalidateLayout(forBoundsChange newBounds: CGRect) -> Bool {
+    public override func shouldInvalidateLayout(forBoundsChange newBounds: CGRect) -> Bool {
         return true
     }
     
-    override func targetContentOffset(forProposedContentOffset proposedContentOffset: CGPoint, withScrollingVelocity velocity: CGPoint) -> CGPoint {
+    public override func targetContentOffset(forProposedContentOffset proposedContentOffset: CGPoint, withScrollingVelocity velocity: CGPoint) -> CGPoint {
         // If the property `isPagingEnabled` is set to false, we don't enable paging and thus return the current contentoffset.
         guard isPagingEnabled else {
             let latestOffset = super.targetContentOffset(forProposedContentOffset: proposedContentOffset, withScrollingVelocity: velocity)
@@ -61,7 +61,7 @@ final class SWHorizontalStackLayout: UICollectionViewFlowLayout {
         return CGPoint(x: newVerticalOffset, y: proposedContentOffset.y)
     }
     
-    override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
+    public override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
         guard let allAttributes = super.layoutAttributesForElements(in: rect) else {
             return nil
         }
