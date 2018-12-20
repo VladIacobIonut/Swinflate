@@ -11,6 +11,7 @@
 		F53A93C821CB7A34005ECF25 /* SwinflateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F53A93C721CB7A34005ECF25 /* SwinflateTests.m */; };
 		F53A93CA21CB7A34005ECF25 /* Swinflate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5AF55E121C7A8240098CCD7 /* Swinflate.framework */; };
 		F53A93D121CB7A61005ECF25 /* SWInflateLayoutUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53A93D021CB7A61005ECF25 /* SWInflateLayoutUnitTest.swift */; };
+		F53A93D321CB8FD9005ECF25 /* SWHorizontalStackLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53A93D221CB8FD9005ECF25 /* SWHorizontalStackLayout.swift */; };
 		F5AF55E621C7A8240098CCD7 /* Swinflate.h in Headers */ = {isa = PBXBuildFile; fileRef = F5AF55E421C7A8240098CCD7 /* Swinflate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		F53A93C721CB7A34005ECF25 /* SwinflateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwinflateTests.m; sourceTree = "<group>"; };
 		F53A93C921CB7A34005ECF25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F53A93D021CB7A61005ECF25 /* SWInflateLayoutUnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWInflateLayoutUnitTest.swift; sourceTree = "<group>"; };
+		F53A93D221CB8FD9005ECF25 /* SWHorizontalStackLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWHorizontalStackLayout.swift; sourceTree = "<group>"; };
 		F5AF55E121C7A8240098CCD7 /* Swinflate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Swinflate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5AF55E421C7A8240098CCD7 /* Swinflate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Swinflate.h; sourceTree = "<group>"; };
 		F5AF55E521C7A8240098CCD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				F5AF55EC21C7A8BB0098CCD7 /* SWInflateLayout.swift */,
+				F53A93D221CB8FD9005ECF25 /* SWHorizontalStackLayout.swift */,
 			);
 			path = Layouts;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F53A93D321CB8FD9005ECF25 /* SWHorizontalStackLayout.swift in Sources */,
 				F52C5E5921C9322200E19FF8 /* SWInflateLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
