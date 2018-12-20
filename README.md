@@ -33,6 +33,9 @@ Installation
 
 Carthage
 
+**Swinflate** is also available through Carthage. For more information go to [Carthage](https://github.com/Carthage/Carthage).
+To install just write into your Cartfile:
+
 ```
 github "https://github.com/VladIacobIonut/Swinflate" ~> 0.0.1
 ```
