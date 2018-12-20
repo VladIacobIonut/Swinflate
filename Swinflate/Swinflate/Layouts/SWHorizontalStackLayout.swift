@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class StackFlowLayout: UICollectionViewFlowLayout {
+final class SWHorizontalStackLayout: UICollectionViewFlowLayout {
     // MARK: - Properties
     
     var hasStackEffect: Bool = false
