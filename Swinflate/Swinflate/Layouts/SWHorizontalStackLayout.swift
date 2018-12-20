@@ -11,8 +11,8 @@ import UIKit
 public final class SWHorizontalStackLayout: UICollectionViewFlowLayout {
     // MARK: - Properties
     
-    var hasStackEffect: Bool = false
-    var isPagingEnabled: Bool = true
+    public var hasStackEffect: Bool = false
+    public var isPagingEnabled: Bool = true
     private var firstSetupDone: Bool = false
     private var cellWidth: CGFloat = 0
     private let scaleRatio: CGFloat = 0.05
