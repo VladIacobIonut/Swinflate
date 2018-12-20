@@ -16,8 +16,11 @@ Swinflate aims to encorporate a set of collection view layouts which provide a b
 
 #### SWInflateLayout
 
-<p align="center"><img src="https://github.com/VladIacobIonut/Swinflate/blob/master/ReadmeResources/swinflate.gif" height="400" width="300"/></p>
+<p align="center"><img src="https://github.com/VladIacobIonut/Swinflate/blob/master/ReadmeResources/swinflate.gif" height="350" width="250"/></p>
 
+#### SWHorizontalStackLayout
+
+<p align="center"><img src="https://github.com/VladIacobIonut/Swinflate/blob/master/ReadmeResources/stack.gif" height="350" width="250"/></p>
 
 ## Requirements
 
