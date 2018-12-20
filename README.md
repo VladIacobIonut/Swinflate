@@ -43,7 +43,7 @@ Usage
 
 This layouts are designed to work with horizontal collection view of a single row and multiple columns.  
 
-1. Before using it, please import in the class where your collectionView lies.
+1. Before using it, please import it in the class where your collectionView lies.
 
 ```swift
   import Swinflate
