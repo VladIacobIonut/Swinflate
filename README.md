@@ -31,9 +31,8 @@ Swinflate aims to encorporate a set of collection view layouts which provide a b
 Installation
 ------------
 
-Carthage
-
-**Swinflate** is also available through Carthage. For more information go to [Carthage](https://github.com/Carthage/Carthage).
+**Swinflate** is also available through Carthage. For more information go to [Carthage](https://github.com/Carthage/Carthage). 
+<br>
 To install just write into your Cartfile:
 
 ```
