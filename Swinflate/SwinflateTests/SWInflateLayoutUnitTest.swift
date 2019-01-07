@@ -18,6 +18,7 @@ final class SWInflateLayoutUnitTest: XCTestCase {
     override func setUp() {
         super.setUp()
     
+        XCUIApplication().launch()
     }
     
     override func tearDown() {
