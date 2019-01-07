@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Example.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>Swinflate.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,11 +17,36 @@
 		<key>SwinflateTests.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>2</integer>
+		</dict>
+		<key>SwinflateUITests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>F557831621E3523A00E9A8C7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F557832921E3523E00E9A8C7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F557833421E3523E00E9A8C7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F557835721E3654E00E9A8C7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>F5AF55E021C7A8240098CCD7</key>
 		<dict>
 			<key>primary</key>
