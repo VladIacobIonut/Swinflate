@@ -12,6 +12,7 @@ public final class SWInflateLayout: UICollectionViewFlowLayout {
     // MARK: - Properties
     
     public var isPagingEnabled = true
+    public var leftContentOffset: CGFloat = 0
     private var firstSetupDone = false
     private var cellWidth: CGFloat = 0
     private var contentSpacing: CGFloat = 0
@@ -58,7 +59,7 @@ public final class SWInflateLayout: UICollectionViewFlowLayout {
         // Calculate newHorizontalOffset
         let newHorizontalOffset = ((currentPage + flickedPages) * pageWidth) - self.collectionView!.contentInset.left
         
-        return CGPoint(x: newHorizontalOffset, y: proposedContentOffset.x)
+        return CGPoint(x: newHorizontalOffset - (2 * leftContentOffset), y: proposedContentOffset.x)
     }
     
     override public func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
@@ -74,8 +75,8 @@ public final class SWInflateLayout: UICollectionViewFlowLayout {
             return nil
         }
         
-        contentSpacing = (collectionViewBounds.width - cellWidth) / 2
-        collectionView?.contentInset = UIEdgeInsets(top: 0, left: contentSpacing, bottom: 0, right: 0)
+        contentSpacing = (collectionViewBounds.width - cellWidth) / 2 - leftContentOffset
+        collectionView?.contentInset = UIEdgeInsets(top: collectionView?.contentInset.top ?? 0, left: contentSpacing - leftContentOffset, bottom: collectionView?.contentInset.bottom ?? 0 , right: 15)
         
         items.enumerateObjects { (object, index, stop) in
             let attribute = object as! UICollectionViewLayoutAttributes
