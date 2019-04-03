@@ -19,7 +19,6 @@
 		F557832421E3523D00E9A8C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F557832221E3523D00E9A8C7 /* LaunchScreen.storyboard */; };
 		F557834621E3592E00E9A8C7 /* SwinflateExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = F557834521E3592E00E9A8C7 /* SwinflateExample.swift */; };
 		F557834821E35C2200E9A8C7 /* StackLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F557834721E35C2200E9A8C7 /* StackLayoutViewController.swift */; };
-		F557834A21E35C6000E9A8C7 /* Swinflate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5AF55E121C7A8240098CCD7 /* Swinflate.framework */; };
 		F557834C21E35C8A00E9A8C7 /* BasicCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F557834B21E35C8A00E9A8C7 /* BasicCollectionViewCell.swift */; };
 		F557834E21E3616C00E9A8C7 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F557834D21E3616C00E9A8C7 /* UIColor+Extensions.swift */; };
 		F557834F21E363E800E9A8C7 /* Swinflate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5AF55E121C7A8240098CCD7 /* Swinflate.framework */; };
@@ -124,7 +123,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F557834F21E363E800E9A8C7 /* Swinflate.framework in Frameworks */,
-				F557834A21E35C6000E9A8C7 /* Swinflate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,7 +375,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Vlad Iacob";
 				TargetAttributes = {
 					F53A93C421CB7A34005ECF25 = {
@@ -401,7 +399,7 @@
 					};
 					F5AF55E021C7A8240098CCD7 = {
 						CreatedOnToolsVersion = 10.1;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -925,7 +923,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -952,7 +950,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.vladi.Swinflate;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
