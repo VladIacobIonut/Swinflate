@@ -12,7 +12,7 @@ import Swinflate
 class InflateLayoutViewController: UIViewController {
     // MARK: - Properties
     
-    private lazy var cellHeight = Int(collectionView.bounds.height - 120)
+    private lazy var cellHeight = 200
     private lazy var cellWidth = Int(collectionView.bounds.width - 60)
     private var collectionView: UICollectionView
     
@@ -21,9 +21,10 @@ class InflateLayoutViewController: UIViewController {
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         let layout = SWInflateLayout()
         layout.isPagingEnabled = true
+        layout.leftContentOffset = 0
         
         collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        collectionView.contentInset = UIEdgeInsets(top: 0, left: 40, bottom: 0, right: 40)
+        collectionView.contentInset = UIEdgeInsets(top: 0, left: -20, bottom: 0, right: 10)
         collectionView.register(BasicCollectionViewCell.self, forCellWithReuseIdentifier: "BasicCell")
         
         super.init(nibName: nil, bundle: nil)
@@ -54,9 +55,9 @@ class InflateLayoutViewController: UIViewController {
     private func setupUI() {
         view.addSubview(collectionView)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
-        
+        collectionView.contentInset = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 0)
         collectionView.topAnchor.constraint(equalTo: view.topAnchor, constant: 80).isActive = true
-        collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -300).isActive = true
         collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
     }
@@ -66,7 +67,7 @@ class InflateLayoutViewController: UIViewController {
 
 extension InflateLayoutViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 20
+        return 5
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
