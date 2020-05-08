@@ -31,12 +31,13 @@ Swinflate aims to encorporate a set of collection view layouts which provide a b
 Installation
 ------------
 
-**Swinflate** is also available through Carthage. For more information go to [Carthage](https://github.com/Carthage/Carthage). 
+**Swinflate** is  available for installation via **Swift Package Manager** and **Carthage**. 
+
 <br>
-To install just write into your Cartfile:
+To install via Carthage, paste the next line your Cartfile:
 
 ```
-github "https://github.com/VladIacobIonut/Swinflate" ~> 0.0.3
+github "https://github.com/VladIacobIonut/Swinflate" ~> 1.0.3
 ```
 
 
