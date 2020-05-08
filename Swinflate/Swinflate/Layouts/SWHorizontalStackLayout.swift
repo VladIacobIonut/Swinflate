@@ -11,9 +11,9 @@ import UIKit
 public final class SWHorizontalStackLayout: UICollectionViewFlowLayout {
     // MARK: - Properties
     
-    public var hasStackEffect: Bool = false
-    public var isPagingEnabled: Bool = true
-    private var firstSetupDone: Bool = false
+    public var hasStackEffect = false
+    public var isPagingEnabled = true
+    private var firstSetupDone = false
     private var cellWidth: CGFloat = 0
     private let scaleRatio: CGFloat = 0.05
     
@@ -30,7 +30,7 @@ public final class SWHorizontalStackLayout: UICollectionViewFlowLayout {
     }
     
     public override func shouldInvalidateLayout(forBoundsChange newBounds: CGRect) -> Bool {
-        return true
+        true
     }
     
     public override func targetContentOffset(forProposedContentOffset proposedContentOffset: CGPoint, withScrollingVelocity velocity: CGPoint) -> CGPoint {

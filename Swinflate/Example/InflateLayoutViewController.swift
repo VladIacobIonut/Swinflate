@@ -85,6 +85,6 @@ extension InflateLayoutViewController: UICollectionViewDataSource {
 
 extension InflateLayoutViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: cellWidth, height: cellHeight)
+        CGSize(width: cellWidth, height: cellHeight)
     }
 }

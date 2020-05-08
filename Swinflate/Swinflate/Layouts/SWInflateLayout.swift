@@ -31,7 +31,7 @@ public final class SWInflateLayout: UICollectionViewFlowLayout {
     }
     
     override public func shouldInvalidateLayout(forBoundsChange newBounds: CGRect) -> Bool {
-        return true
+        true
     }
     
     public override func targetContentOffset(forProposedContentOffset proposedContentOffset: CGPoint, withScrollingVelocity velocity: CGPoint) -> CGPoint {
@@ -68,8 +68,8 @@ public final class SWInflateLayout: UICollectionViewFlowLayout {
         guard let firstCellAttribute = items.firstObject as? UICollectionViewLayoutAttributes else {
             return nil
         }
-        
-        self.cellWidth = firstCellAttribute.size.width
+
+        cellWidth = firstCellAttribute.size.width
         
         guard let collectionViewBounds  = collectionView?.bounds else {
             return nil
